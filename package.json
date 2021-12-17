@@ -1,15 +1,5 @@
 {
-  "name": "web-framework",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "ssh://git@github/DylanEHolland/web-framework",
-  "author": "DylanEHolland <salinson1138@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "phaser": "^3.55.2"
-  }
+    "scripts": {
+        "start": "deno run --allow-net --allow-env main.ts"
+    }
 }
