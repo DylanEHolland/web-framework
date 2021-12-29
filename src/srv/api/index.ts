@@ -7,8 +7,16 @@
 //     res.status(200).send({ status: "Good" });
 // });
 
-function add_route(path, response) {
+// const sampleMiddleware =  => {
+//     console.log("before send");
+// };
 
+function add_route(app: any, path: string, response: string) {
+    app.use(() => {}, (req: any, res: any) => {
+        res.status(200).send(response);
+    })
 }
 
-add_route("/", "<b>this is a test</b>");
+export default function run(app: any) {
+    add_route(app, "/", "<b>this is a test</b>");
+}
